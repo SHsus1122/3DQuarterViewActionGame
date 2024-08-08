@@ -4764,8 +4764,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7551999391883421847}
   - component: {fileID: 7644371001180510648}
-  - component: {fileID: 7644371001180510650}
   - component: {fileID: 7644371001180510651}
+  - component: {fileID: 7644371001180510650}
   - component: {fileID: 7644371001180510653}
   m_Layer: 0
   m_Name: Item Heart
@@ -4807,19 +4807,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &7644371001180510650
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7171357625540227629}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &7644371001180510651
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4833,6 +4820,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: -1, z: 0}
+--- !u!135 &7644371001180510650
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171357625540227629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7644371001180510653
 MonoBehaviour:
   m_ObjectHideFlags: 0
