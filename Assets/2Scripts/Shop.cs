@@ -31,6 +31,7 @@ public class Shop : MonoBehaviour
     public void Buy(int index)
     {
         int price = itemPrice[index];
+        Debug.Log("index : " + index + ", price : " + price);
         if (price > enterPlayer.coin)
         {
             StopCoroutine(Talk());
@@ -38,6 +39,7 @@ public class Shop : MonoBehaviour
             return;
         }
 
+        Debug.Log("Success");
         enterPlayer.coin -= price;
         Vector3 ranVec = Vector3.right * Random.Range(-3, 3) + Vector3.forward * Random.Range(-3, 3);
         Instantiate(itemObj[index], itemPos[index].position + ranVec, itemPos[index].rotation);
